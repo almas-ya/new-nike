@@ -9,3 +9,56 @@
 /* git checkout ИмяВетки - перейти к ветке или к сохранению */
 /* git checkout -b ИмяВетки создать и перейти к ветке */
 /* gitk - это интерфейс для просмотра веток и сохранений */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background: url(../images/header_bg.jpg) center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.nav{
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+}
+
+.logo{
+    display: block;
+}
+
+.menu__item-link{
+    padding: 21px 24px 21px 28px;
+    color: #4d4d4d;
+    display: block;
+    transition: 0.5s;
+}
+
+.menu__item-link:hover{
+    color: #fff;
+    background: #515151;
+}
+
+.header__info{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
